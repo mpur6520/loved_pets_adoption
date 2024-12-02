@@ -1,32 +1,87 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.header nav {
+body {
+  font-family: serif, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffff;
+  color: #333;
+}
+
+header {
+  background-color: rgba(0,0,0,1);
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav ul {
   display: flex;
-  justify-content: space-between;
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
+  justify-content: center;
+  list-style: none;
 }
 
-.header nav a {
+nav ul li {
+  margin: 0 15px;
+}
+
+a{
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  padding: 10px 200px;
 }
 
-.logo {
-  font-weight: bold;
+a:hover{
+  color: #444;
 }
 
-.mission, .main-image, .staff-carousel {
+.main {
   padding: 20px;
   text-align: center;
 }
 
+.mission {
+  background: url("https://github.com/mpur6520/loved_pets_adoption/blob/main/dog_log.png?raw=true") no-repeat center/cover;
+  padding: 200px;
+  margin: auto;
+  text-align: center;
+  max-width: 100%;
+  border-radius: 8px;
+  height: 60%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.philosophy {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.staff-carousel{
+  width: 80%;
+  margin: auto;
+}
+
+.staff-carousel h2{
+  font-size: 30px;
+}
+
+/* Carousel */
 .carousel-container {
   display: flex;
   align-items: center;
@@ -46,7 +101,7 @@ body {
 .carousel-item {
   flex: 0 0 25%;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .carousel-item img {
@@ -65,8 +120,3 @@ body {
   font-size: 18px;
 }
 
-.image-text-section{
-  width: 100%;
-  height: 300px;
-  background-image: url(dog_log.png) no-repeat; 
-}
