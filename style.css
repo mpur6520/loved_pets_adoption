@@ -279,3 +279,144 @@ footer .footer-right{
   color: #333;
   line-height: 1.5;
 }
+
+
+.donation-banner {
+  background-color: #b1c9b8; 
+  padding: 150px;
+  margin: auto;
+  text-align: center;
+  height: 60%;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.donation-banner h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.donation-banner p {
+  font-size: 1.4em;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.donation-options {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.donation-options h2 {
+  font-size: 1.9em;
+  margin-bottom: 20px;
+}
+
+.donation-impact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.impact-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.impact-item h3 {
+  font-size: 2em;
+  color: #2f855a;
+}
+
+.impact-item p {
+  font-size: 1em;
+  color: #333;
+}
+
+.donation-form-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #b1c9b8;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: auto;
+  max-width: 400px;
+}
+
+.donation-form input, .donation-form textarea, .donation-form button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.donation-form button {
+  background-color: #2f855a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.donation-form button:hover {
+  background-color: #276749;
+}
+/* Next Steps Section */
+.next-steps-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  max-width: 100%;
+}
+
+.next-steps-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.next-steps-text {
+  flex: 1;
+  text-align: left;
+}
+
+.next-steps-text h2 {
+  font-size: 2em;
+  color: #2f855a;
+}
+
+.next-steps-text p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.next-steps-image {
+  flex: 1;
+  text-align: center;
+}
+
+.next-steps-image img {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 24% 76% 26% 74% / 79% 70% 30% 21% ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
