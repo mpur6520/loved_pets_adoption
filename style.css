@@ -1,8 +1,11 @@
-/* Reset some default browser styles */
 body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body {
@@ -10,29 +13,58 @@ body {
   line-height: 1.6;
   background-color: #ffff;
   color: #333;
+  max-width: 100%;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(0,0,0,1);
   padding: 10px 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  width: 100%;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
-  list-style: none;
+  justify-content: flex-end;
+  list-style: none;\
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
   margin: 0 15px;
 }
+header .logo {
+  display: flex;
+  align-items: center; 
+  margin-left: 10px;
+  font-family: fantasy;
+}
+
+header .logo h1 {
+  color: #fff;
+  font-size: 1.6em;
+  margin: 0;
+  margin-left: 10px; 
+}
+
+header .logo .logo-img {
+  width: 40px; 
+  height: auto;
+  border-radius: 50%; 
+}
 
 a{
   color: #fff;
   text-decoration: none;
-  padding: 10px 200px;
+  padding: 10px 20px;
 }
 
 a:hover{
@@ -50,35 +82,73 @@ a:hover{
   margin: auto;
   text-align: center;
   max-width: 100%;
-  border-radius: 8px;
   height: 60%;
-  font-size: 20px;
+  font-size: 1.8em;
   color: #fff;
 }
 
 .philosophy {
   padding: 20px;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 1800px;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.philosophy .content {
+  flex: 1; 
+  padding: 20px;
+}
+
+.philosophy .mission-image {
+  flex: 1; 
+  text-align: center;
+}
+
+.philosophy .mission-image img {
+  max-width: 70%;
+  max-height: 10%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+.philosophy h2{
+  font-size: 1.9em;
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #000;
   color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
+  padding: 100px 20px;
   bottom: 0;
   width: 100%;
+  font-size: 1.1em;
+}
+
+footer .footer-left{
+  flex: 1;
+  align-items: left;
+}
+
+footer .footer-right{
+  flex: 1;
+  align-items: left;
 }
 
 .staff-carousel{
-  width: 80%;
+  width: 70%;
   margin: auto;
+  font-size: 1.1em;
+  padding: 30px;
 }
 
 .staff-carousel h2{
-  font-size: 30px;
+  font-size: 1.9em;
 }
 
 /* Carousel */
@@ -86,16 +156,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-text: center;
 }
 
 .carousel {
   overflow: hidden;
-  width: 80%;
+  width: 100%;
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
+  padding: 20px;
 }
 
 .carousel-item {
@@ -104,10 +176,22 @@ footer {
   padding: 5px;
 }
 
+.carousel-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.carousel-item p {
+  font-size: 1em;
+  margin-top: 0; 
+  margin-bottom: 10px;
+}
+
 .carousel-item img {
   width: 100%;
   max-width: 150px;
-  height: auto;
+  height: 100%;
+  max-height: 150px;
   border-radius: 50%;
 }
 
@@ -120,3 +204,78 @@ footer {
   font-size: 18px;
 }
 
+.get-involved {
+  background: #b1c9b8;
+  border-radius: 15px;
+  color: black;
+  padding: 20px;
+  text-align: left;
+}
+
+.get-involved ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.get-involved ul li {
+  margin: 0 15px;
+}
+
+.get-involved ul li a {
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 30px;
+  width: 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.get-involved ul li a:hover {
+  background-color: #444;
+}
+
+.adoption-stats {
+  background-color: #b1c9b8; /* Match the "Get Involved" background */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+
+.adoption-stats h2 {
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stat-column {
+  flex: 1; 
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-column h3 {
+  font-size: 2em;
+  color: #2f855a; 
+  margin-bottom: 10px;
+}
+
+.stat-column p {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+}
