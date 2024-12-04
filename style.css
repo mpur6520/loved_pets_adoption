@@ -647,3 +647,86 @@ footer .footer-right{
   color: #fff;
 }
 
+.adoption-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.adoption-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2f855a;
+}
+
+.pet-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pet-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.pet-card:hover {
+  transform: scale(1.05);
+}
+
+.pet-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  aspect-ratio: 1;
+  object-fit: cover; 
+  transform: scale(1.1);
+}
+
+.pet-card h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.pet-card p {
+  font-size: 1.1em;
+  color: #333;
+}
+/* Found Your Choice Section */
+.found-choice {
+  background-color: #b1c9b8;
+  padding: 30px;
+  color: black;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 15px;
+  max-width: 700px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.found-choice h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.found-choice p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.found-choice ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.found-choice li {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
