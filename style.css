@@ -730,3 +730,15 @@ footer .footer-right{
   font-size: 1.1em;
   margin-bottom: 15px;
 }
+
+.looking {
+  background: url("https://github.com/mpur6520/loved_pets_adoption/blob/main/dog_cat.png?raw=true") no-repeat center/cover;
+  padding: 200px;
+  margin: auto;
+  text-align: center;
+  max-width: 100%;
+  height: 65%;
+  font-size: 1.8em;
+  color: #fff;
+  margin-top: 50px;
+}
